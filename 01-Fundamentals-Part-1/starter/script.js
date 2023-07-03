@@ -7,3 +7,9 @@ console.log(2/3, 3/2)
 let x, y;
 x = y = 25-5-10
 console.log(x, y)
+
+let abelexp = 4
+
+if (abelexp >= 4) {
+  `Abel needs a chanege`
+}
