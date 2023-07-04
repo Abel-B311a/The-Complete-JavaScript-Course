@@ -13,3 +13,7 @@ let abelexp = 4
 if (abelexp >= 4) {
   `Abel needs a chanege`
 }
+
+const abelBD = `1994`;
+let currentYear = `2023`
+console.log(`Abel is ${Number(currentYear)-Number(abelBD)} years old`)
