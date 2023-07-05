@@ -38,3 +38,14 @@ if ('18' === 18) {
   console.log(`no sweet 18`)
 }
 
+const loginCode = Number(prompt(`insert the secrete code`))
+console.log(loginCode)
+
+if (loginCode === 49) {
+  console.log(`Welcome to the secrete club`)
+} else if (loginCode === 7) {
+console.log(`welcome to the secrte club VIP`)
+} else {
+  console.log(`Fuck off before we shoot you`)
+}
+
