@@ -24,3 +24,10 @@ if (money) {
 } else {
   console.log(`Make it pain`)
 }
+
+let height;
+if (height) {
+  console.log(`defined`)
+} else {
+  console.log(`undefined`)
+}
