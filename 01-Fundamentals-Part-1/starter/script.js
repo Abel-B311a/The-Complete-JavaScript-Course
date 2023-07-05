@@ -17,3 +17,10 @@ if (abelexp >= 4) {
 const abelBD = `1994`;
 let currentYear = `2023`
 console.log(`Abel is ${Number(currentYear)-Number(abelBD)} years old`)
+
+const money = 0;
+if (money) {
+  console.log(`Make it rain`)
+} else {
+  console.log(`Make it pain`)
+}
