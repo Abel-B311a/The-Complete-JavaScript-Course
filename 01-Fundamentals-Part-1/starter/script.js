@@ -31,3 +31,10 @@ if (height) {
 } else {
   console.log(`undefined`)
 }
+
+if ('18' === 18) {
+  console.log(`sweet 18`)
+} else {
+  console.log(`no sweet 18`)
+}
+
