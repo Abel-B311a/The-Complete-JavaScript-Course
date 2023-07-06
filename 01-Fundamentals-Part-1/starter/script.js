@@ -49,3 +49,16 @@ console.log(`welcome to the secrte club VIP`)
   console.log(`Fuck off before we shoot you`)
 }
 
+const isBellaChis = true
+const isBellaSmart = true
+const isBellaSeget = false
+
+if (isBellaChis && isBellaSmart && !isBellaSeget) {
+  `Bella Passed The Vibe Check!`
+} else {
+  `The World is came to an end!`
+}
+
+
+
+
