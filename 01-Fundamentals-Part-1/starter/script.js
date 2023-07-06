@@ -54,9 +54,9 @@ const isBellaSmart = true
 const isBellaSeget = false
 
 if (isBellaChis && isBellaSmart && !isBellaSeget) {
-  `Bella Passed The Vibe Check!`
+  console.log(`Bella Passed The Vibe Check!`)
 } else {
-  `The World is came to an end!`
+  console.log(`The World is came to an end!`)
 }
 
 
