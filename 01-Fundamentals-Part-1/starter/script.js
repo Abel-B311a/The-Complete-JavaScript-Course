@@ -59,6 +59,31 @@ if (isBellaChis && isBellaSmart && !isBellaSeget) {
   console.log(`The World is came to an end!`)
 }
 
+const fA4 = `Faya`
+
+switch(fA4) {
+  case `Faya`:
+    console.log(`Dchra`)
+    break
+  case `Boka`:
+    console.log(`Pile Foundation`)
+    break
+  case `ABD`:
+    console.log(`Back me up`)
+    break
+  case `Aman`:
+    console.log(`Goosebumbs`)
+    break
+  case `Abel`:
+    console.log(`Bella Beats`)
+    break
+  default:
+    console.log(`Not a FA4 member`) 
+}
+
+const vibeMeter = `60`
+vibeMeter >= `80` ? console.log(`Chis`): console.log(`Seget`) 
+
 
 
 
