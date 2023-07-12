@@ -108,6 +108,34 @@ console.log(scoreDolphines, scoreKoalas);
 checkWinner(scoreDolphines, scoreKoalas)
 
 
+// Arrays
+
+const FA4Members = [`Bella`, `Faya`, `ABD`, `Boka`, `Aman`]
+console.log(FA4Members)
+
+const FANMembers = new Array (`Bella`, `Faya`, `ABD`, `Boka`, `Aman`, `Nahom`, `Ashe`, `Adam`)
+console.log(FANMembers[3]) // will print the number 4 out of the array list, it start counting starting from 0.
+console.log(FANMembers.length) // will count the number of elements in the array
+console.log(FANMembers[FANMembers.length-1])// will print the last element 8-1=7 the the 7th element is Adam
+FANMembers[5] = `Ekru` // will replace or mutate an element, we can always change the element in Array eventho the array is delared as const. but we cant replace the entire array.
+console.log(FANMembers)
+// Array elemnts can be strings, variables, calculations, ather arrays ... just any expression but  not a statement 
+
+function EdmeCalc2(birthYear2){
+  return 2023-birthYear2;
+}
+
+const FANEdme = [1994, 1994, 1994, 1996, 1994, 1994, 1995, 1994]
+const FANEdmeArray = [EdmeCalc2(FANEdme[0]),EdmeCalc2(FANEdme[1]),EdmeCalc2(FANEdme[2]),EdmeCalc2(FANEdme[3]),EdmeCalc2(FANEdme[4]),EdmeCalc2(FANEdme[5]),EdmeCalc2(FANEdme[6]),EdmeCalc2(FANEdme[FANEdme.length-1])]
+console.log(FANEdmeArray)
+
+console.log(`${FANMembers[0]} is ${FANEdmeArray[0]} years old!`)
+console.log(`${FANMembers[1]} is ${FANEdmeArray[1]} years old!`)
+console.log(`${FANMembers[FANMembers.length-2]} is ${FANEdmeArray[FANEdmeArray.length-2]} years old!`)
+
+
+
+
 
 
 
