@@ -45,12 +45,84 @@ const ageCalArr = birthYear => 2023-birthYear
 const ageNahom = ageCalArr(1994)
 console.log(ageNahom)
 
-const retirement = (birthYear, Nameof) => {
+
+
+let retirement = (birthYear, Nameof) => {
   const amet = 2023-birthYear;
   const ret = 60-amet;
   return `${Nameof} retires in ${ret} years!` 
 }
-
 const bellaRetData = retirement(1994, `Bella`)
 const MotherRerData = retirement(1965, `Messi`)
 console.log(`${bellaRetData} and his mother, ${MotherRerData}`)
+
+
+
+
+function EdmeCalc(birthYear){
+  return 2023-birthYear;
+}
+
+let Edme = EdmeCalc(1960)
+
+
+function retirement2(Nameof) { 
+  const ret = 60-Edme;
+  
+  if (ret>=0) {
+    console.log(`${Nameof} retires in ${ret} years!`)  
+  } else {
+    console.log(`${Nameof} aleady retired!`)
+    
+  } 
+}
+
+let NameRet = retirement2(`Messi`)
+
+
+
+// coding Challenge 1 Data 1
+const calcAverage = (value1, value2, value3) => (value1+value2+value3)/3;
+let scoreDolphines = calcAverage(85,54,41);
+let scoreKoalas = calcAverage(23,34,27);
+console.log(scoreDolphines, scoreKoalas);
+
+function checkWinner(avgDolphines, avgKoalas) {
+  if ((2*avgKoalas)<=avgDolphines) {
+    console.log(`Dolphines win (${avgDolphines} vs. ${avgKoalas})`)
+  } else if ((2*avgDolphines)<=avgKoalas) {
+    console.log(`Koalas win (${avgKoalas} vs. ${avgDolphines})`)
+  } else {
+    console.log(`Nobody Wins!`)
+  }
+}
+
+checkWinner(scoreDolphines, scoreKoalas)
+
+
+// data 2
+scoreDolphines = calcAverage(44,23,71);
+scoreKoalas = calcAverage(65,54,49);
+console.log(scoreDolphines, scoreKoalas);
+// by simply calling the function checkwinner again, it runnes for data 2
+checkWinner(scoreDolphines, scoreKoalas)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
