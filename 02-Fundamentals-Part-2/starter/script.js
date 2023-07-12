@@ -117,8 +117,23 @@ const FANMembers = new Array (`Bella`, `Faya`, `ABD`, `Boka`, `Aman`, `Nahom`, `
 console.log(FANMembers[3]) // will print the number 4 out of the array list, it start counting starting from 0.
 console.log(FANMembers.length) // will count the number of elements in the array
 console.log(FANMembers[FANMembers.length-1])// will print the last element 8-1=7 the the 7th element is Adam
-FANMembers[5] = `Ekru` // will replace or mutate an element, we can always change the element in Array eventho the array is delared as const. but we cant replace the entire array.
+FANMembers[5] = `Ekru` // will replace or mutate an element, we can always change the element in Array eventho the array is declared as const. but we cant replace the entire array.
 console.log(FANMembers)
+FANMembers.push(`Nahom`) // a method which will add elements at the end of the list.
+console.log(FANMembers)
+FANMembers.unshift(`Sualh`) // a method which will add elements at the begining of the list.
+console.log(FANMembers)
+FANMembers.pop() // a method which will remove the last element of the list
+FANMembers.pop() // if we do it twice the last two will be gone
+console.log(FANMembers)
+const removedName=FANMembers.shift(); // will remove the 1st element from the list
+console.log(FANMembers)
+console.log(removedName) // if we store it in a variable it will show the removed 1st name
+console.log(FANMembers.indexOf(`Faya`)) // will tell at which position an elemnt exist in the list, if we use it to the element which is not in the list it will generate -1
+console.log(FANMembers.includes(`Shampodia`)) // will result a true of false value if an element present in the list, and uses a strict equality, since it produce a boolean it can be used in an if statemnt
+
+
+
 // Array elemnts can be strings, variables, calculations, ather arrays ... just any expression but  not a statement 
 
 function EdmeCalc2(birthYear2){
