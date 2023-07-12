@@ -148,6 +148,34 @@ console.log(`${FANMembers[0]} is ${FANEdmeArray[0]} years old!`)
 console.log(`${FANMembers[1]} is ${FANEdmeArray[1]} years old!`)
 console.log(`${FANMembers[FANMembers.length-2]} is ${FANEdmeArray[FANEdmeArray.length-2]} years old!`)
 
+// objects
+const abelInfo = {
+  NameAKA: `Bella Beats`,
+  bornDay: FANEdme[0],
+  age: FANEdmeArray[0],
+  friends: FANMembers
+} 
+console.log(abelInfo)
+
+// coding challenge 2
+
+function calcTip(bill) {
+  if (bill>=50 && bill<=300) {
+    return bill*0.15
+  } else {
+    return bill*0.2
+  }
+}
+
+const bills = [125, 555,  44] 
+
+const tips = [calcTip(bills[0]), calcTip(bills[1]),calcTip(bills[2])]
+console.log(tips)
+
+const total = [bills[0]+tips[0], bills[1]+tips[1], bills[2]+tips[2]]
+console.log(total)
+
+
 
 
 
