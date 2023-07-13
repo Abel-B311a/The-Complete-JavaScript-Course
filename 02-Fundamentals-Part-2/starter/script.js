@@ -148,14 +148,6 @@ console.log(`${FANMembers[0]} is ${FANEdmeArray[0]} years old!`)
 console.log(`${FANMembers[1]} is ${FANEdmeArray[1]} years old!`)
 console.log(`${FANMembers[FANMembers.length-2]} is ${FANEdmeArray[FANEdmeArray.length-2]} years old!`)
 
-// objects
-const abelInfo = {
-  NameAKA: `Bella Beats`,
-  bornDay: FANEdme[0],
-  age: FANEdmeArray[0],
-  friends: FANMembers
-} 
-console.log(abelInfo)
 
 // coding challenge 2
 
@@ -174,6 +166,58 @@ console.log(tips)
 
 const total = [bills[0]+tips[0], bills[1]+tips[1], bills[2]+tips[2]]
 console.log(total)
+
+// objects
+const abelInfo = {
+  NameAKA: `Bella Beats`,
+  bornDay: FANEdme[0],
+  age: FANEdmeArray[0],
+  friends: FANMembers,
+  chisness: true,
+  graduationYear: 2018,
+  Experiance: function(graduationYear) { // usng normal function expresion
+    return 2023-graduationYear
+  },
+  Experiance2: function() {
+    return 2023-this.graduationYear 
+  },// using this.  currently `this` is abelinfo. the reasion being experiance2 is called by the method abelinfo in the console.log. this will automate our code. if we change the name of the object i.e.abelInfo it would still work if you are using this. otherwise we need to change it manually everywhere. Your code needs to be as automated as posiible for ease of future changes.
+
+  summary: function() {
+    return `${this.NameAKA} is a ${this.age} years old ${this.Job} and he is a ${this.chisness ? `Chis`: `Seget`}.` 
+  }
+} ;
+console.log(abelInfo)
+console.log(abelInfo.Experiance(abelInfo.graduationYear))
+console.log(abelInfo.Experiance2())
+console.log(abelInfo[`Experiance`](abelInfo[`graduationYear`]))
+
+console.log(abelInfo.NameAKA) // Dot notation: to specifically select an element from the list we use the .propertyName
+console.log(abelInfo[`NameAKA`]) // Bracket notation: this does the same as well but we can put some calualtion or expression in here Eg....
+
+const pplqa = prompt(`what do you want to know about Bella? NameAKA, bornDay, age or friends`)
+console.log(abelInfo[pplqa])   // will take the ans from the prompt and search in abelinfo and print the result. this doesnt work if we console.log(abelInfo.pplqa)
+// if we insert a property that doesnt exsit in the objects it will generate undifined which is a falsy value and we can use that to generate an if/else statement
+
+if (abelInfo[pplqa]) {
+  console.log(abelInfo[pplqa])
+} else {
+  console.log(`Mn Agebah! Police neh ende? only choose from NameAKA, bornDay, age or friends`)
+}
+
+
+// to add elements to objects using dot and bracket notation
+abelInfo.location = `Addis Ababa, Ethiopia`
+abelInfo[`Job`] = `FulL Stack Developer`
+console.log(abelInfo)
+
+console.log(`${abelInfo.NameAKA} has ${abelInfo.friends.length} friends, and his best friend is ${FA4Members[4]}.`)
+
+console.log(abelInfo.summary())
+
+
+
+
+
 
 
 
