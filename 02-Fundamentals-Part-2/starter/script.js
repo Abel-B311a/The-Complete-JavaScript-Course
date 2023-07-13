@@ -1,6 +1,6 @@
 'use strict';
 
-function chisDetector() {
+/*function chisDetector() {
   console.log(`Chis Alert! Bella is here!`)
 }
 // calling or invoking or running the function 
@@ -214,8 +214,38 @@ console.log(`${abelInfo.NameAKA} has ${abelInfo.friends.length} friends, and his
 
 console.log(abelInfo.summary())
 
+*/
 
+// coding challenge 3
 
+const BMIinfo = {
+  Name1: `Mark Miller`,
+  Name2: `John Smith`,
+  Mass1: 78,
+  Mass2: 92,
+  height1: 1.69,
+  height2: 1.95,
+  calcBMI1: function() {
+    this.BMI1 = this.Mass1/(this.height1 ** 2)
+    return this.BMI1
+  },
+  calcBMI2: function() {
+    this.BMI2 = this.Mass2/(this.height2 ** 2)  
+    return this.BMI2
+  }
+}
+
+console.log(BMIinfo.calcBMI1())
+console.log(BMIinfo.calcBMI2())
+console.log(BMIinfo)
+
+if (BMIinfo.BMI1>BMIinfo.BMI2) {
+  console.log(`${BMIinfo.Name1}'s BMI (${BMIinfo.BMI1}) is higher than ${BMIinfo.Name2}'s (${BMIinfo.BMI2})`)
+} else if (BMIinfo.BMI2>BMIinfo.BMI1){
+  console.log(`${BMIinfo.Name2}'s BMI (${BMIinfo.BMI2}) is higher than ${BMIinfo.Name1}'s (${BMIinfo.BMI1})`)
+} else {
+  console.log(`Both are Equal!`)
+}
 
 
 
