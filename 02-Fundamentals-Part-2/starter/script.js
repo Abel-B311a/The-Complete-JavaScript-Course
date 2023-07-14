@@ -245,26 +245,132 @@
 //   console.log(`${BMIinfo.Name2}'s BMI (${BMIinfo.BMI2}) is higher than ${BMIinfo.Name1}'s (${BMIinfo.BMI1})`)
 // } else {
 //   console.log(`Both are Equal!`)
+// // }
+
+// for(let i = 1; i<=10; i++) {
+//   console.log(`Bench press ${i}`)
 // }
 
-for(let i = 1; i<=10; i++) {
-  console.log(`Bench press ${i}`)
+
+
+// const ABDInfo = [
+//   `NameAKA: ABD`,
+//     `bornYear: 1994`,
+//     `age: 29`,
+//     `chisness: true`,
+//     `graduationYear: 2018`
+// ]
+
+// const type = [] // the array to be filled
+
+// for (let i = 0; i < ABDInfo.length; i++) {
+//   console.log(ABDInfo[i]);   // listing all elements in the array (readng from an array)
+//   type[i] = typeof ABDInfo[i] // creating an array from the loop, (filling the array)
+//   type.push(typeof ABDInfo[i]) // another method to fill the array which will add it to the end of the array. this is the better method! 
+// } 
+// console.log(type)
+
+
+// const ametoch = [1994, 2003, 1996, 1997, 1845, 1999, 2008, 1993, 2022, 1998, 1987]
+// const Edmeoch = []
+// const _90s = [] 
+
+// for (let i=0; i<ametoch.length; i++) {
+// Edmeoch[i] = (2023-ametoch[i])
+// if (ametoch[i] >= 1990 !== ametoch[i]<2000) continue;  // continue will escape the elements mentioned in the if  condtion 
+// if (ametoch[i] > 1997) break; // stops the loop after the if condition is satisfied   
+// _90s.push(ametoch[i]) // this will push the slected ones to the array
+// }
+// console.log(Edmeoch)
+// console.log(_90s)
+
+// for (let i=ABDInfo.length-1; i>=0; i--) { // Looping Backwards, looping starting from the end to the beginning 
+//   console.log(i, ABDInfo[i])
+// }
+
+// // 3set... 5 rep
+
+// for (let set=1; set<=3; set++) {           // loop inside a loop
+//   console.log(`set ${set}`)
+//   for (let rep=1; rep<=5; rep++) {
+//     console.log(`set ${set}: rep ${rep}`)
+//   }
+// }
+
+// // while loop
+
+// let i=1                              
+// while (i<=10) {
+//   console.log(`Squat ${i}`)
+//   i++
+// }
+
+// // above is while loop structure compared to the for loop, but we dont need the counter varible in while loop.
+// // i.e. if we dont know how many itration we need before hand... Eg... we dont know how many times we  rolling a dice till we get a 6.
+
+// let dice = Math.trunc(Math.random()*6+1)   // Math.random() will automatically generate nubmbers b/t 0.1 and 1.... Math.trunc will round to bottom 
+// console.log(dice)
+
+// while(dice!==6) {    // this line checkes if the number is diffrent from 6
+//   console.log(`You rolled a ${dice}`) // and print this one
+//   dice = Math.trunc(Math.random()*6+1) // this line will generate a new dice number to be tested 
+//   if (dice==6) {   // if 6 is generated this will be printed 
+//     console.log(`We Got a Winner Here!`)
+//   }
+// }
+
+// coding challenge 4
+
+const bills = [22,295,176,440,37,105,10,1100,86,52]
+const tips = []
+const totals = []
+
+function calcTip(bills) {
+  if (bills>=50 && bills<=300) {
+    return bills*0.15
+  } else {
+    return bills*0.2
+  }
+}
+let sumTotals = 0
+
+
+for(let i=0; i < bills.length; i++) {
+  tips.push(calcTip(bills[i]))
+  totals.push(bills[i] + tips[i])
+  sumTotals = sumTotals + totals[i]
+  console.log(`Bill = `, bills[i])
+  console.log(`Tip = `, tips[i])
+  console.log(`Total = `, totals[i])
 }
 
-const ABDInfo = [
-  `NameAKA: ABD`,
-    `bornYear: 1994`,
-    `age: 29`,
-    `chisness: true`,
-    `graduationYear: 2018`
-]
+const avgSumTotals = sumTotals/totals.length
+console.log(`Today's Average Totals = `, avgSumTotals)
 
 
-for (let i = 0; i < ABDInfo.length; i++) {
-  console.log(ABDInfo[i]);
-} 
+// coding challenge 5
+
+// let arr = [56,63,78,54,5,4,2,3,99,100]
+// let sum = 0
+
+// for(let i = 0; i < arr.length; i++) {
+//   sum = sum + arr[i]
+// }
+
+// console.log(sum)
+// console.log(sum/(arr.length))
 
 
+// // or 
+// let arr = [56,63,78,54,5,4,2,3,99,100]
+// function avgCal(arr) {
+//   let sum = 0
+//   for(let i = 0; i < arr.length; i++) {
+//       sum = sum + arr[i]
+//     }
+//     return sum/arr.length
+// }
+// console.log(avgCal(arr))
 
 
 
