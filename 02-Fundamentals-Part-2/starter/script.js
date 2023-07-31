@@ -1,13 +1,13 @@
-'use strict';
+"use strict";
 
 // function chisDetector() {
 //   console.log(`Chis Alert! Bella is here!`)
 // }
-// // calling or invoking or running the function 
+// // calling or invoking or running the function
 // chisDetector()
 // chisDetector()
 // chisDetector()
-// //These will print the  Chis Alert! Bella is here! 3 
+// //These will print the  Chis Alert! Bella is here! 3
 
 // function bella(Age, highlight) {
 //   const bellaYearly = `When bella reached the age ${Age}, he ${highlight}.`;
@@ -19,8 +19,8 @@
 // console.log(bella(29, `changed his career path to a Frontend Developer`))
 
 // function bella(Age, highlight) { // function name and variables
-//   return `When bella reached the age ${Age}, he ${highlight}.`;} // you can directlly return it no need to define a variable and then return the variable 
-// console.log(bella(18, `went to AAU`))  // the values are called arguments 
+//   return `When bella reached the age ${Age}, he ${highlight}.`;} // you can directlly return it no need to define a variable and then return the variable
+// console.log(bella(18, `went to AAU`))  // the values are called arguments
 // console.log(bella(24, `landed his 1st Job`))
 
 // function ageCalDec(birthYear) {
@@ -30,8 +30,6 @@
 // const ageBella = ageCalDec(1994)
 // const ageAshe = ageCalDec(1995)
 // console.log(ageBella, ageAshe)
-
-
 
 // const ageCalExp = function (birthYear) {
 //   return 2023-birthYear
@@ -45,19 +43,14 @@
 // const ageNahom = ageCalArr(1994)
 // console.log(ageNahom)
 
-
-
 // let retirement = (birthYear, Nameof) => {
 //   const amet = 2023-birthYear;
 //   const ret = 60-amet;
-//   return `${Nameof} retires in ${ret} years!` 
+//   return `${Nameof} retires in ${ret} years!`
 // }
 // const bellaRetData = retirement(1994, `Bella`)
 // const MotherRerData = retirement(1965, `Messi`)
 // console.log(`${bellaRetData} and his mother, ${MotherRerData}`)
-
-
-
 
 // function EdmeCalc(birthYear){
 //   return 2023-birthYear;
@@ -65,21 +58,18 @@
 
 // let Edme = EdmeCalc(1960)
 
-
-// function retirement2(Nameof) { 
+// function retirement2(Nameof) {
 //   const ret = 60-Edme;
-  
+
 //   if (ret>=0) {
-//     console.log(`${Nameof} retires in ${ret} years!`)  
+//     console.log(`${Nameof} retires in ${ret} years!`)
 //   } else {
 //     console.log(`${Nameof} aleady retired!`)
-    
-//   } 
+
+//   }
 // }
 
 // let NameRet = retirement2(`Messi`)
-
-
 
 // // coding Challenge 1 Data 1
 // const calcAverage = (value1, value2, value3) => (value1+value2+value3)/3;
@@ -99,14 +89,12 @@
 
 // checkWinner(scoreDolphines, scoreKoalas)
 
-
 // // data 2
 // scoreDolphines = calcAverage(44,23,71);
 // scoreKoalas = calcAverage(65,54,49);
 // console.log(scoreDolphines, scoreKoalas);
 // // by simply calling the function checkwinner again, it runnes for data 2
 // checkWinner(scoreDolphines, scoreKoalas)
-
 
 // // Arrays
 
@@ -132,9 +120,7 @@
 // console.log(FANMembers.indexOf(`Faya`)) // will tell at which position an elemnt exist in the list, if we use it to the element which is not in the list it will generate -1
 // console.log(FANMembers.includes(`Shampodia`)) // will result a true of false value if an element present in the list, and uses a strict equality, since it produce a boolean it can be used in an if statemnt
 
-
-
-// // Array elemnts can be strings, variables, calculations, ather arrays ... just any expression but  not a statement 
+// // Array elemnts can be strings, variables, calculations, ather arrays ... just any expression but  not a statement
 
 // function EdmeCalc2(birthYear2){
 //   return 2023-birthYear2;
@@ -148,7 +134,6 @@
 // console.log(`${FANMembers[1]} is ${FANEdmeArray[1]} years old!`)
 // console.log(`${FANMembers[FANMembers.length-2]} is ${FANEdmeArray[FANEdmeArray.length-2]} years old!`)
 
-
 // // coding challenge 2
 
 // function calcTip(bill) {
@@ -159,7 +144,7 @@
 //   }
 // }
 
-// const bills = [125, 555,  44] 
+// const bills = [125, 555,  44]
 
 // const tips = [calcTip(bills[0]), calcTip(bills[1]),calcTip(bills[2])]
 // console.log(tips)
@@ -179,11 +164,11 @@
 //     return 2023-graduationYear
 //   },
 //   Experiance2: function() {
-//     return 2023-this.graduationYear 
+//     return 2023-this.graduationYear
 //   },// using this.  currently `this` is abelinfo. the reasion being experiance2 is called by the method abelinfo in the console.log. this will automate our code. if we change the name of the object i.e.abelInfo it would still work if you are using this. otherwise we need to change it manually everywhere. Your code needs to be as automated as posiible for ease of future changes.
 
 //   summary: function() {
-//     return `${this.NameAKA} is a ${this.age} years old ${this.Job} and he is a ${this.chisness ? `Chis`: `Seget`}.` 
+//     return `${this.NameAKA} is a ${this.age} years old ${this.Job} and he is a ${this.chisness ? `Chis`: `Seget`}.`
 //   }
 // } ;
 // console.log(abelInfo)
@@ -204,7 +189,6 @@
 //   console.log(`Mn Agebah! Police neh ende? only choose from NameAKA, bornDay, age or friends`)
 // }
 
-
 // // to add elements to objects using dot and bracket notation
 // abelInfo.location = `Addis Ababa, Ethiopia`
 // abelInfo[`Job`] = `FulL Stack Developer`
@@ -213,8 +197,6 @@
 // console.log(`${abelInfo.NameAKA} has ${abelInfo.friends.length} friends, and his best friend is ${FA4Members[4]}.`)
 
 // console.log(abelInfo.summary())
-
-
 
 // // coding challenge 3
 
@@ -230,7 +212,7 @@
 //     return this.BMI1
 //   },
 //   calcBMI2: function() {
-//     this.BMI2 = this.Mass2/(this.height2 ** 2)  
+//     this.BMI2 = this.Mass2/(this.height2 ** 2)
 //     return this.BMI2
 //   }
 // }
@@ -251,8 +233,6 @@
 //   console.log(`Bench press ${i}`)
 // }
 
-
-
 // const ABDInfo = [
 //   `NameAKA: ABD`,
 //     `bornYear: 1994`,
@@ -266,25 +246,24 @@
 // for (let i = 0; i < ABDInfo.length; i++) {
 //   console.log(ABDInfo[i]);   // listing all elements in the array (readng from an array)
 //   type[i] = typeof ABDInfo[i] // creating an array from the loop, (filling the array)
-//   type.push(typeof ABDInfo[i]) // another method to fill the array which will add it to the end of the array. this is the better method! 
-// } 
+//   type.push(typeof ABDInfo[i]) // another method to fill the array which will add it to the end of the array. this is the better method!
+// }
 // console.log(type)
-
 
 // const ametoch = [1994, 2003, 1996, 1997, 1845, 1999, 2008, 1993, 2022, 1998, 1987]
 // const Edmeoch = []
-// const _90s = [] 
+// const _90s = []
 
 // for (let i=0; i<ametoch.length; i++) {
 // Edmeoch[i] = (2023-ametoch[i])
-// if (ametoch[i] >= 1990 !== ametoch[i]<2000) continue;  // continue will escape the elements mentioned in the if  condtion 
-// if (ametoch[i] > 1997) break; // stops the loop after the if condition is satisfied   
+// if (ametoch[i] >= 1990 !== ametoch[i]<2000) continue;  // continue will escape the elements mentioned in the if  condtion
+// if (ametoch[i] > 1997) break; // stops the loop after the if condition is satisfied
 // _90s.push(ametoch[i]) // this will push the slected ones to the array
 // }
 // console.log(Edmeoch)
 // console.log(_90s)
 
-// for (let i=ABDInfo.length-1; i>=0; i--) { // Looping Backwards, looping starting from the end to the beginning 
+// for (let i=ABDInfo.length-1; i>=0; i--) { // Looping Backwards, looping starting from the end to the beginning
 //   console.log(i, ABDInfo[i])
 // }
 
@@ -299,7 +278,7 @@
 
 // // while loop
 
-// let i=1                              
+// let i=1
 // while (i<=10) {
 //   console.log(`Squat ${i}`)
 //   i++
@@ -308,45 +287,43 @@
 // // above is while loop structure compared to the for loop, but we dont need the counter varible in while loop.
 // // i.e. if we dont know how many itration we need before hand... Eg... we dont know how many times we  rolling a dice till we get a 6.
 
-// let dice = Math.trunc(Math.random()*6+1)   // Math.random() will automatically generate nubmbers b/t 0.1 and 1.... Math.trunc will round to bottom 
+// let dice = Math.trunc(Math.random()*6+1)   // Math.random() will automatically generate nubmbers b/t 0.1 and 1.... Math.trunc will round to bottom
 // console.log(dice)
 
 // while(dice!==6) {    // this line checkes if the number is diffrent from 6
 //   console.log(`You rolled a ${dice}`) // and print this one
-//   dice = Math.trunc(Math.random()*6+1) // this line will generate a new dice number to be tested 
-//   if (dice==6) {   // if 6 is generated this will be printed 
+//   dice = Math.trunc(Math.random()*6+1) // this line will generate a new dice number to be tested
+//   if (dice==6) {   // if 6 is generated this will be printed
 //     console.log(`We Got a Winner Here!`)
 //   }
 // }
 
 // coding challenge 4
 
-const bills = [22,295,176,440,37,105,10,1100,86,52]
-const tips = []
-const totals = []
+const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+const tips = [];
+const totals = [];
 
 function calcTip(bills) {
-  if (bills>=50 && bills<=300) {
-    return bills*0.15
+  if (bills >= 50 && bills <= 300) {
+    return bills * 0.15;
   } else {
-    return bills*0.2
+    return bills * 0.2;
   }
 }
-let sumTotals = 0
+let sumTotals = 0;
 
-
-for(let i=0; i < bills.length; i++) {
-  tips.push(calcTip(bills[i]))
-  totals.push(bills[i] + tips[i])
-  sumTotals = sumTotals + totals[i]
-  console.log(`Bill = `, bills[i])
-  console.log(`Tip = `, tips[i])
-  console.log(`Total = `, totals[i])
+for (let i = 0; i < bills.length; i++) {
+  tips.push(calcTip(bills[i]));
+  totals.push(bills[i] + tips[i]);
+  sumTotals = sumTotals + totals[i];
 }
 
-const avgSumTotals = sumTotals/totals.length
-console.log(`Today's Average Totals = `, avgSumTotals)
-
+const avgSumTotals = sumTotals / totals.length;
+console.log(`Bill = `, ...bills);
+console.log(`Tip = `, ...tips);
+console.log(`Total = `, ...totals);
+console.log(`Today's Average Totals = `, avgSumTotals);
 
 // coding challenge 5
 
@@ -360,8 +337,7 @@ console.log(`Today's Average Totals = `, avgSumTotals)
 // console.log(sum)
 // console.log(sum/(arr.length))
 
-
-// // or 
+// // or
 // let arr = [56,63,78,54,5,4,2,3,99,100]
 // function avgCal(arr) {
 //   let sum = 0
@@ -371,26 +347,3 @@ console.log(`Today's Average Totals = `, avgSumTotals)
 //     return sum/arr.length
 // }
 // console.log(avgCal(arr))
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
