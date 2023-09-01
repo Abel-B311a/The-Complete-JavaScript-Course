@@ -17,7 +17,9 @@ let score = 20;
 document.querySelector(`.check`).addEventListener(`click`, function () {
   const guess = Number(document.querySelector(`.guess`).value);
 
-  if (guess > 20 || guess <= 0) {
+  if (!guess) {
+    document.querySelector(`.message`).textContent = `🛑 No Number!`;
+  } else if (guess > 20 || guess <= 0) {
     document.querySelector(`.message`).textContent = `🛑 Not in Range!`;
   } else if (guess === secretNumber) {
     document.querySelector(`.message`).textContent = `🎉 Correct Number!`;
