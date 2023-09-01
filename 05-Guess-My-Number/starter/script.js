@@ -24,8 +24,10 @@ function() {
     else if (guess > secretNumber) {
         document.querySelector(`.message`).textContent = `Too high`
     }
-    else if (guess < secretNumber) {
+    else if (guess < secretNumber < 21) {
         document.querySelector(`.message`).textContent = `Too low` 
+    } else {
+        document.querySelector(`.message`).textContent = `Not in range`
     }
 }
 )
