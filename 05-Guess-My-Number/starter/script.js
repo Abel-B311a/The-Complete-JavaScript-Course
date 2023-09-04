@@ -9,13 +9,14 @@
 
 // document.querySelector(`.guess`).value = 5;
 
-const secretNumber = Math.trunc(Math.random() * 20) + 1;
-document.querySelector(`.number`).textContent = secretNumber;
+let secretNumber = Math.trunc(Math.random() * 20) + 1;
+// document.querySelector(`.number`).textContent = secretNumber;
 
 let score = 20;
 
 document.querySelector(`.check`).addEventListener(`click`, function () {
   const guess = Number(document.querySelector(`.guess`).value);
+  // const highscore = document.querySelector(`.highscore`).textContent;
 
   if (!guess) {
     document.querySelector(`.message`).textContent = `🛑 No Number!`;
@@ -26,8 +27,15 @@ document.querySelector(`.check`).addEventListener(`click`, function () {
 
     document.querySelector(`.number`).style.backgroundColor = `#ffffff`;
     document.querySelector(`.number`).style.width = `30rem`;
-
+    document.querySelector(`.number`).textContent = secretNumber;
     document.querySelector(`body`).style.backgroundColor = `#018749`;
+
+    if (document.querySelector(`.highscore`).textContent < score) {
+      document.querySelector(`.highscore`).textContent = score;
+      document.querySelector(`.highscore`).textContent = score;
+    } else {
+      document.querySelector(`.highscore`).textContent = highscore;
+    }
   } else if (guess > secretNumber && guess < 21) {
     if (score > 1) {
       document.querySelector(`.message`).textContent = `😔 Too high!`;
@@ -47,4 +55,16 @@ document.querySelector(`.check`).addEventListener(`click`, function () {
       document.querySelector(`.message`).textContent = `🥵 You lost the Game`;
     }
   }
+});
+
+document.querySelector(`.again`).addEventListener(`click`, function () {
+  score = 20;
+  secretNumber = Math.trunc(Math.random() * 20) + 1;
+  document.querySelector(`.message`).textContent = `Start guessing...`;
+  document.querySelector(`.score`).textContent = score;
+  document.querySelector(`body`).style.backgroundColor = `#222`;
+  document.querySelector(`.number`).style.backgroundColor = `#eee`;
+  document.querySelector(`.number`).style.width = `15rem`;
+  document.querySelector(`.number`).textContent = `?`;
+  document.querySelector(`.guess`).value = ``;
 });
